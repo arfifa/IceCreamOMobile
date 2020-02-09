@@ -8,7 +8,7 @@
 <a href="https://github.com/arfifa/IceCreamOMobile/blob/master/LICENSE"></a>
 </p>
 
-Glau chat is an online ice cream sales application for mobile, made with the React Native and Node JS in the backend side.
+IceCreamO Mobile is an online ice cream sales application for mobile, made with the React Native and Node JS in the backend side.
 
 ## Screenshots
 
