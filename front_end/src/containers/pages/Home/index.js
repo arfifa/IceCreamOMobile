@@ -22,9 +22,6 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    StatusBar.setBarStyle('light-content', true)
-    StatusBar.setBackgroundColor('transparent')
-    StatusBar.setTranslucent(true)
     this.props.dispatch(getItem())
   }
 
@@ -33,6 +30,7 @@ class Home extends Component {
 
     return (
       <SafeAreaView style={styles.container}>
+        <StatusBar backgroundColor="#7FB6BA" barStyle="light-content" />
         <View style={styles.banner}>
           <View style={styles.headerBrand}>
             <View style={{ flexDirection: 'row' }}>
@@ -154,7 +152,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   banner: {
-    height: 235,
+    height: 215,
     backgroundColor: '#7FB6BA'
   },
   imageBrand: {
@@ -167,7 +165,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 16,
-    marginTop: 20,
     justifyContent: 'space-between'
   },
   textBrand: {

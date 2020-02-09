@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, SafeAreaView, StyleSheet, ImageBackground, TouchableOpacity, ScrollView, Image, TextInput } from 'react-native'
+import { Text, View, SafeAreaView, StyleSheet, ImageBackground, TouchableOpacity, ScrollView, Image, TextInput, StatusBar } from 'react-native'
 import { Card, CardItem, Body } from 'native-base'
 import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'

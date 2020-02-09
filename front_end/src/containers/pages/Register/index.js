@@ -130,7 +130,8 @@ const styles = StyleSheet.create({
   },
   banner: {
     flex: 0.5,
-    padding: 20
+    padding: 20,
+    paddingTop: 30
   },
   body: {
     flex: 2,

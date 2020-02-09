@@ -11,17 +11,17 @@ import { deleteAuth } from '../../../redux/action/auth';
 
 class Profile extends Component {
 
-  _handleLogout = () => {
-    // const { token } = this.props.auth.data
-    // let tokenBearer = `Bearer ${token}`
-    // const tokenDecode = jwt_decode(token)
-    // const { username } = tokenDecode.username
-    // console.log(username)
-    // this.props.dispatch(deleteAuth(username, {
-    //   headers: {
-    //     'Authorization': tokenBearer
-    //   }
-    // }))
+  _handleLogout = async () => {
+    const { token } = this.props.auth.data
+    let tokenBearer = `Bearer ${token}`
+    const tokenDecode = jwt_decode(token)
+    const { username } = tokenDecode.username
+    console.log(username)
+    await this.props.dispatch(deleteAuth(username, {
+      headers: {
+        'Authorization': tokenBearer
+      }
+    }))
     this.props.navigation.navigate('LaunchPage')
   }
 
@@ -117,7 +117,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10
+    borderBottomRightRadius: 10,
+    paddingTop: 15
   },
   titleAccount: {
     color: '#FFECAC',

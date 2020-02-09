@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, ScrollView, SafeAreaView, StyleSheet, Image, TouchableOpacity, TextInput } from 'react-native'
+import { Text, View, ScrollView, SafeAreaView, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import { Card, CardItem, Body } from 'native-base'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import IconF from 'react-native-vector-icons/FontAwesome'
